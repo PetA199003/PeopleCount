@@ -140,9 +140,10 @@ app.put('/api/cameras/:id', (req, res) => {
 });
 
 const PORT = process.env.PORT || 3001;
-server.listen(PORT, () => {
+server.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 PersonCounter API running on port ${PORT}`);
   console.log(`📡 WebSocket server ready`);
   console.log(`📹 TCP Camera server ready on port 8888`);
-  console.log(`🔗 API available at http://localhost:${PORT}/api`);
+  console.log(`🔗 API available at http://0.0.0.0:${PORT}/api`);
+  console.log(`🌐 Web Interface: http://0.0.0.0:5173`);
 });
