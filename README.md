@@ -34,7 +34,6 @@ Ein verteiltes Personenzähler-System mit Raspberry Pi Kamera-Nodes und zentrale
 ```bash
 # Repository klonen
 git clone <repository-url>
-cd opencv-person-counter
 
 # Dependencies installieren
 npm install
